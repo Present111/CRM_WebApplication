@@ -1,0 +1,167 @@
+.inbox-page {
+  display: flex;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar */
+.inbox-sidebar {
+  width: 250px; /* Chiều rộng của Sidebar */
+  background-color: #f3f4f6;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  transition: width 0.3s ease;
+  position: relative;
+  z-index: 1; /* Đặt z-index thấp hơn submenu */
+  overflow: visible; /* Đảm bảo không cắt submenu */
+}
+
+/* Khi sidebar thu gọn */
+.inbox-sidebar.collapsed {
+  width: 70px;
+  padding: 10px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar-list li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  cursor: pointer;
+}
+
+.sidebar-actions {
+  position: absolute; /* Đưa xuống dưới cùng */
+  bottom: 20px; /* Cách đáy sidebar một khoảng */
+  width: 90%; /* Đảm bảo chiếm toàn bộ chiều ngang */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-actions button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.inbox-sidebar.collapsed .sidebar-actions {
+  display: none;
+}
+
+.sidebar-actions button:hover {
+  background-color: #0056b3;
+}
+
+.inbox-main {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.inbox-main h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.inbox-main p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.inbox-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  max-width: 70px;
+  max-height: 70px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Header cho Inbox */
+.inbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.inbox-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.back-icon {
+  font-size: 18px;
+  color: #00aaff;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.inbox-page.collapsed .back-icon {
+  transform: rotate(180deg); /* Quay lại khi thu gọn */
+}
+
+.inbox-header-left h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.inbox-header-right .search-icon {
+  font-size: 18px;
+  color: #00aaff;
+  cursor: pointer;
+}
+
+/* Khi sidebar thu gọn */
+.inbox-page.collapsed .inbox-sidebar {
+  width: 50px; /* Chiều rộng thu gọn */
+  padding: 10px; /* Giảm khoảng padding */
+}
+
+.inbox-page.collapsed .sidebar-list {
+  display: none; /* Ẩn danh sách */
+}
+
+.inbox-page.collapsed .sidebar-actions {
+  display: none; /* Ẩn các nút hành động */
+}
+
+.inbox-page.collapsed .inbox-header-left h2 {
+  display: none; /* Ẩn chữ Inbox */
+}

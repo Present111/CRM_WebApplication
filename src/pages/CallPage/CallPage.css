@@ -1,0 +1,119 @@
+.call-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.call-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.call-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.call-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Filters Section */
+.call-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.filter-clear {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-dropdown,
+.filter-add,
+.filter-all-views,
+.filter-advanced {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filter-advanced {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-advanced:hover {
+  background-color: #0056b3;
+}
+
+/* No Results Section */
+.call-results {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.call-empty img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.call-empty h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.call-empty p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Footer Section */
+.call-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-prev,
+.pagination-next {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.page-size {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

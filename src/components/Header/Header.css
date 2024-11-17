@@ -1,0 +1,77 @@
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #293042;
+  color: white;
+  height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header khi Sidebar thu gọn */
+.header.collapsed {
+  left: 70px; /* Chừa khoảng trống nhỏ hơn khi Sidebar thu gọn */
+  width: calc(100% - 70px); /* Mở rộng phần còn lại của màn hình */
+}
+
+/* Phần bên phải của Header */
+.header-right {
+  flex-grow: 1; /* Để phần này chiếm phần còn lại */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* Thanh tìm kiếm */
+.header-search {
+  display: flex;
+  align-items: center;
+  background-color: #3b4758;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.header-search input {
+  border: none;
+  background: none;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.header-search .search-shortcut {
+  font-size: 12px;
+  color: #888;
+  background: #1a202c;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+/* Biểu tượng và nút */
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #ff8a00; /* Màu khi hover */
+}

@@ -1,0 +1,17 @@
+.app {
+  display: flex;
+  height: 100vh; /* Chiều cao toàn màn hình */
+  overflow: hidden; /* Ngăn cuộn không cần thiết */
+}
+
+/* Wrapper cho Header và nội dung chính */
+.main-wrapper {
+  flex-grow: 1; /* Chiếm phần còn lại của màn hình sau Sidebar */
+  margin-left: 250px; /* Khoảng trống dành cho Sidebar */
+  margin-top: 60px; /* Khoảng trống dành cho Header */
+  transition: margin-left 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+.sidebar.collapsed ~ .main-wrapper {
+  margin-left: 70px; /* Điều chỉnh khi Sidebar thu gọn */
+}

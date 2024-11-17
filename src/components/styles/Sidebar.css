@@ -1,0 +1,113 @@
+/* Sidebar container */
+.sidebar {
+  width: 250px; /* Chiều rộng của Sidebar */
+  height: 100vh; /* Chiều cao toàn màn hình */
+  background-color: #293042; /* Màu nền */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0; /* Đặt Sidebar từ đầu màn hình */
+  left: 0;
+  z-index: 1000;
+  transition: width 0.3s ease; /* Hiệu ứng khi thu gọn */
+}
+
+.sidebar.collapsed {
+  width: 70px; /* Chiều rộng khi thu gọn */
+}
+
+.sidebar-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a202c;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff8a00;
+}
+
+/* Menu items */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.menu-item {
+  padding: 15px 20px;
+  position: relative; /* Để submenu hiển thị dựa vào menu chính */
+  transition: background 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #3b4758;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/* Menu icon */
+.menu-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  transition: margin 0.3s;
+}
+
+.sidebar.collapsed .menu-icon {
+  margin-right: 0;
+}
+
+/* Menu text */
+.menu-text {
+  transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .menu-text {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Submenu */
+.submenu {
+  position: absolute; /* Để menu con thoát khỏi flow */
+  top: 0;
+  left: 100%; /* Hiển thị bên phải của Sidebar */
+  list-style: none;
+  background-color: #3b4758; /* Màu nền menu con */
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+  z-index: 9999; /* Đặt giá trị z-index cao hơn mọi thành phần khác */
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  width: 250px; /* Đảm bảo submenu đủ rộng */
+}
+
+/* Hiển thị submenu khi mở */
+.menu-item.has-submenu.open .submenu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999; /* Đảm bảo hiển thị trên mọi thứ */
+}
+
+.submenu li {
+  padding: 10px 20px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: white;
+}
+
+.submenu li:hover {
+  background-color: #4b5563;
+}

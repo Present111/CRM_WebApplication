@@ -1,0 +1,162 @@
+.task-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.task-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.task-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Task Tabs */
+.task-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.task-tab {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.task-tab.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.task-tab.add-view {
+  font-weight: bold;
+}
+
+.task-tab.all-views {
+  font-weight: bold;
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Info Bar */
+.task-info-bar {
+  padding: 10px 15px;
+  background-color: #e9f7ff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.task-info-bar a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* Advanced Filters */
+.task-advanced-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.filter-icon {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-chip {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.close-chip {
+  color: red;
+  cursor: pointer;
+}
+
+.filter-dropdown,
+.filter-edit-columns,
+.filter-save,
+.filter-start-tasks {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filter-save {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-start-tasks {
+  background-color: #ff5a5f;
+  color: white;
+}
+
+.filter-start-tasks.disabled {
+  background-color: #ffdede;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* No Tasks Section */
+.task-results {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-empty img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.task-empty h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-empty p {
+  font-size: 14px;
+  color: #666;
+}

@@ -1,0 +1,102 @@
+/* Toàn bộ trang */
+.list-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Header của trang */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-header h2 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.list-header p {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Các nút hành động */
+.list-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-primary {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-primary:hover {
+  background-color: #e14e53;
+}
+
+.button-secondary {
+  background-color: #f0f0f0;
+  color: #2c3e50;
+  padding: 10px 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-secondary:hover {
+  background-color: #e6e6e6;
+}
+
+/* Nội dung chính */
+.list-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.list-illustration img {
+  max-width: 400px;
+  margin-right: 50px;
+}
+
+.list-text {
+  max-width: 600px;
+}
+
+.list-text h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.list-text p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  font-size: 14px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.learn-more span {
+  text-decoration: underline;
+}
+
+.learn-more:hover {
+  color: #2980b9;
+}
