@@ -1,0 +1,172 @@
+/* Container */
+.signin-container-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+  padding: 20px;
+}
+
+.notification-box {
+  border: 1px solid #00a8e8; /* Màu viền */
+  border-radius: 8px; /* Bo góc */
+  padding: 20px; /* Khoảng cách bên trong */
+  background-color: #f9f9f9; /* Màu nền */
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px; /* Khoảng cách phía dưới */
+  position: absolute;
+  top: 170px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.notification-box h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50; /* Màu chữ tiêu đề */
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.notification-box p {
+  font-size: 14px;
+  color: #555; /* Màu chữ nội dung */
+  margin: 0;
+  line-height: 1.6; /* Giãn dòng */
+}
+
+.notification-box a.classic-login-link {
+  color: #007bff; /* Màu liên kết */
+  text-decoration: none; /* Xóa gạch chân */
+  font-weight: bold; /* In đậm */
+}
+
+.notification-box a.classic-login-link:hover {
+  text-decoration: underline; /* Thêm gạch chân khi hover */
+}
+
+/* Header */
+.signin-header {
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff5c35;
+}
+
+.account-prompt {
+  font-size: 18px;
+  color: #6c757d;
+  position: relative;
+  top: -30px;
+}
+
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.signin-main-horizontal {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+  width: 100%;
+  align-items: center;
+}
+
+.signin-left {
+  flex: 1;
+}
+
+.signin-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Form */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.email-label {
+  font-size: 14px;
+  color: #6c757d;
+  text-align: left;
+}
+
+.email-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.signin-button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff5c35;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #e0522d;
+}
+
+/* Other Sign-in Options */
+.other-options-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.option-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.option-button:hover {
+  background: #f1f1f1;
+}

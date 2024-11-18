@@ -3,16 +3,29 @@ import "./LoginPage.css";
 import googleImage from "../../assets/loginPage/goggle.png";
 import microsoftImage from "../../assets/loginPage/microsoft.png";
 import appleImage from "../../assets/loginPage/apple.png";
-
+import { useNavigate } from "react-router-dom";
 function LoginPage() {
+  const navigate = useNavigate();
+  const handleGoogleLogin = () => {
+    navigate("/contact");
+  };
+
   return (
     <div className="login-container">
-      <div className="login-logo">HubSpot</div>
+      {/* Đưa signin-prompt lên đầu */}
+      <div className="signin-prompt">
+        <div className="lgLogo">HubSpot</div>
+        <span>Have an account? </span>
+        <a href="/signin" className="signin-link">
+          Sign in
+        </a>
+      </div>
+      {/* Main */}
       <div className="login-form">
         <h1>Create your free account</h1>
         <p>100% free. No credit card needed.</p>
         <div className="login-buttons">
-          <button className="google-button">
+          <button className="google-button" onClick={handleGoogleLogin}>
             <img src={googleImage} alt="Google" />
             Continue with Google
           </button>

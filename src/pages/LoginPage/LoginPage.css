@@ -1,3 +1,35 @@
+/* SignIn */
+/* Container styling */
+.signin-prompt {
+  font-size: 20px; /* Kích thước chữ */
+  color: #4a4a4a; /* Màu chữ */
+  text-align: center; /* Căn giữa */
+  margin-bottom: 20px; /* Khoảng cách dưới */
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 20px; /* Khoảng cách từ đầu trang */
+  right: 20px; /* Khoảng cách từ cạnh phải */
+}
+
+/* Styling for the "Sign in" link */
+.signin-link {
+  color: #2a8fbd; /* Link color */
+  font-weight: bold; /* Make the link bold */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect */
+.signin-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+.lgLogo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ff5c35;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0px; /* Khoảng cách từ đầu trang */
+  left: -1630px;
+}
 /* LoginPage.css */
 
 .login-container {
