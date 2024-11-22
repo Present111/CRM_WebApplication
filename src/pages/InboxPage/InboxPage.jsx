@@ -10,7 +10,6 @@ import calling from "../../assets/inboxPage/calling.png";
 function InboxPage() {
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isLessExpanded, setIsLessExpanded] = useState(false);
-
   return (
     <div className="inbox-page">
       {/* Sidebar */}
@@ -47,9 +46,11 @@ function InboxPage() {
                 className="less-item"
                 onClick={() => setIsLessExpanded(!isLessExpanded)}
               >
-                Less
+                {isLessExpanded ? "Less" : "More"}{" "}
+                {/* Tên hiển thị thay đổi theo trạng thái */}
                 <span className="toggle-icon">
-                  {isLessExpanded ? "▲" : "▼"}
+                  {isLessExpanded ? "▲" : "▼"}{" "}
+                  {/* Biểu tượng thay đổi theo trạng thái */}
                 </span>
               </li>
               {isLessExpanded && (
